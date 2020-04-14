@@ -57,5 +57,5 @@ Once I had everything working, I sat back and took a moment to appreciate this t
 
 Thanks for reading, and stay tuned for more updates on my journey to becoming a software engineer!
 
-** Most importantly, check out the repository [here on Github](https://github.com/jkellyphilly/covid_tracking) or [my explanation of the code on a YouTube video here](https://www.youtube.com/watch?v=WtBNjnAgj3s)! **
+**Most importantly, check out the repository [here on Github](https://github.com/jkellyphilly/covid_tracking) or [my explanation of the code on a YouTube video here](https://www.youtube.com/watch?v=WtBNjnAgj3s)!**
 
