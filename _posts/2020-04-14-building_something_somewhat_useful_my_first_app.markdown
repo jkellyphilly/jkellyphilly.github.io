@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Building Something (Somewhat) Useful: My First App"
-date:       2020-04-14 18:52:36 +0000
+date:       2020-04-14 14:52:37 -0400
 permalink:  building_something_somewhat_useful_my_first_app
 ---
 
@@ -24,7 +24,7 @@ Essentially, my code has 4 main classes: the "driver" class that powers user int
 
 Parsing the API response was tricky, because it turns out that it was returned as a giant string and not as a hash as I had expected. Thus, I spent most of an afternoon and evening slowly yet surely chipping away at parsing the string, and ended up building a few helper methods to avoid repetitive code. Finally, after lots of PRY sessions debugging and trying to figure out exactly how to get the data into a format where I could load it into my Summary and CountrySummary objects effectively, I had my class variables filled with all of the objects I wanted! 
 
-#### Although, something didn't look quite right... 
+### Although, something didn't look quite right... 
 
 ... and after examining the Summary "all" class variable that was supposed to save all of the Summary objects (which should just be the global summary), I noticed that *all of the CountrySummary objects were also gettting stored in that array!*
 
@@ -48,7 +48,7 @@ But, of course, that couldn't be correct! **I didn't re-define/overwrite the #in
 
 and it worked perfectly! Now, when a CountrySummary object was being instantiated, the code `self.class` would yield the class `CountrySummary`, and thus `self.class.all` yields the CountrySummary "all" class variable. So, my items were being stored correctly! 
 
-#### That was a perfect lesson for me in **abstraction**... 
+### That was a perfect lesson for me in **abstraction**... 
 ... or, making my code as re-usable as possible in various situations. My first version of the #initialize method was *not* re-usable... I had hard-coded in the storage location as the Summary class variable! Only after making my code *abstract* by defining the "all" variable as "the current class's storage variable" was I able to *re-use* the same method for both of my object types. 
 
 The other methods for printing the information or retrieving a `CountrySummary` object based on its name or country code were relatively straightforward - I'd encourage you to check out [this video](https://www.youtube.com/watch?v=WtBNjnAgj3s) of me walking through the entire code for the project! (Note: that video is only part 1 of 3 - cycle through the YouTube playlist I've made to see all three videos and thus the full walkthrough of my program). 
@@ -57,5 +57,5 @@ Once I had everything working, I sat back and took a moment to appreciate this t
 
 Thanks for reading, and stay tuned for more updates on my journey to becoming a software engineer!
 
-#### Most importantly, check out the repository [here on Github](https://github.com/jkellyphilly/covid_tracking) or [my explanation of the code on a YouTube video here](https://www.youtube.com/watch?v=WtBNjnAgj3s)!
+** Most importantly, check out the repository [here on Github](https://github.com/jkellyphilly/covid_tracking) or [my explanation of the code on a YouTube video here](https://www.youtube.com/watch?v=WtBNjnAgj3s)! **
 
