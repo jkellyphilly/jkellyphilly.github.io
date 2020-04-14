@@ -1,11 +1,11 @@
 # Site settings
 author: Joel Kelly
-title: 
+title: The Path to Programming
 header-img: img/home-bg.png
 email: joel.kelly.philly@gmail.com
 copyright_name: Joel Kelly
 description: > # this means to ignore newlines until "baseurl:"
-  
+  An inside look at my progression to becoming a software engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  jkellyphilly
