@@ -6,6 +6,8 @@ permalink:  covid_community_food_bank_a_sinatra_app
 ---
 
 
+## In troubling times, the power of humanity is through COMMUNITY. Showing up for each other. This application is my attempt to foster that sense of community.
+
 As I finished up my lessons on using the Sinatra library to make a web application (which I thoroughly enjoyed), I once again was faced with the challenge: **what can I build with these new skills that could be helpful to someone?**
 
 I thought about my first project, the [CoVID-19 Tracking CLI App](https://github.com/jkellyphilly/covid_tracking), that I made to give users a quick and easy way to be presented with summary statistics about COVID. I also thought about what I was doing at the time: 3 times per week, my father and I would meet at a senior center, pick up food, and go on a delivery route to pass out the food to senior citizens in North Philadelphia who couldn't make it out to grocery stores.
