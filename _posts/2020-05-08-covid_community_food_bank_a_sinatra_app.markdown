@@ -16,7 +16,7 @@ On one of these delivery days, a woman asked us if her neighbor could get in tou
 
 When considering the models to build for this application, I knew right off the bat that I wanted two different user groups: community members and volunteers. What connects these two groups, I thought? 
 
-#### Simple: *the delivery that the volunteer brings to the member*. 
+### Simple: *the delivery that the volunteer brings to the member*. 
 
 A member can have many delivery requests (assuming that this CoVID quarantine scenario goes on for a while), and a volunteer can have many deliveries (because I thought about my own experience of passing out food - it's much better to get in your car *once* and knock out a string of deliveries in a row). Also, **a member has many volunteers that they interact with through their deliveries, and a volunteer has many members that they interact with through their deliveries**. 
 
@@ -74,4 +74,4 @@ Essentially, if there was a key in the session hash of `:message`, I display tha
 
 I am not the most design-inclined developer, so was very thankful to find [Water.css](https://watercss.netlify.app/), a very easy and intuitive external stylesheet that I included in my `layout.erb` file to allow the application to have a clean feel. Check it out!
 
-#### Most importantly, [check out the repo here on Github](https://github.com/jkellyphilly/covid-community) and [check out a short video of how to use the app](https://www.youtube.com/watch?v=y_T4EgFcP7E)! 
+### Most importantly, [check out the repo here on Github](https://github.com/jkellyphilly/covid-community) and [check out a short video of how to use the app](https://www.youtube.com/watch?v=y_T4EgFcP7E)! 
