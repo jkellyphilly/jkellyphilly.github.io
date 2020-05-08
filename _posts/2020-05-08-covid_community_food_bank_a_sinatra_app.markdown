@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CoVID Community Food Bank: A Sinatra App"
-date:       2020-05-08 21:22:56 +0000
+date:       2020-05-08 17:22:57 -0400
 permalink:  covid_community_food_bank_a_sinatra_app
 ---
 
@@ -22,7 +22,7 @@ A member can have many delivery requests (assuming that this CoVID quarantine sc
 
 Amazing! The *has many through* relationship worked because of the way I related my user models (Member and Volunteer) to the Delivery model, but it also passed the real-world litmus test! See a screenshot of my table relations below ([or view the diagram on draw.io](https://drive.google.com/file/d/189nH_AESzexbO6fMeRXuRw8htQbOLH9U/view?usp=sharing))
 
-![](https://imgur.com/a/nCId0Dg)
+![Imgur](https://i.imgur.com/qeNnhZ8.png)
 
 In order to keep my data clean, I used [ActiveRecord Validations](https://guides.rubyonrails.org/active_record_validations.html) to only save objects to the database if certain criteria were met (namely, that all of the mandatory fields in creating new/editing profiles or delivery requests were filled out). This prevented bad data from persisting to my database, which is a must-have for any web application. 
 
