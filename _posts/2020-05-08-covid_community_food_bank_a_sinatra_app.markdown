@@ -44,7 +44,7 @@ Additionally, in the MemberController and VolunteerController classes, I built a
 
 When implementing this logic for a member or volunteer editing their profiles, I realized that the username of that current user would already be taken (by that user) when trying to edit their own profile and not changing the username, so I had to do an extra to check to allow a user to use the same username **if the current user's username is the "duplicate" username**. 
 
-Quick note: this is what the logic looked like when a member/volunteer signed up or logged in. You can see here that I created a new key called `:user_type` and stored that in the session message to know whether the current user was a member or a volunteer.
+Quick note: this is what the logic looked like when a member/volunteer signed up or logged in. You can see here that I created a new key called `:user_type` and stored that in the session hash to know whether the current user was a member or a volunteer.
 
 ```
 if @member.save
