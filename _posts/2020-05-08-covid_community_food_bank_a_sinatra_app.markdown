@@ -6,7 +6,8 @@ permalink:  covid_community_food_bank_a_sinatra_app
 ---
 
 
-## In troubling times, the power of humanity is through COMMUNITY. Showing up for each other. This application is my attempt to foster that sense of community.
+## In troubling times, the power of humanity is through *community*. Showing up for each other. 
+### This application is my attempt to foster that sense of togetherness through a useful place to connect those in need with those who want to volunteer.
 
 As I finished up my lessons on using the Sinatra library to make a web application (which I thoroughly enjoyed), I once again was faced with the challenge: **what can I build with these new skills that could be helpful to someone?**
 
