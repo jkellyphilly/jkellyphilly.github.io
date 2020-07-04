@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The Allyship Corner: A JavaScript-Rails SPA"
-date:       2020-07-04 22:28:25 +0000
+date:       2020-07-04 18:28:26 -0400
 permalink:  the_allyship_corner_a_javascript-rails_spa
 ---
 
@@ -19,9 +19,9 @@ The first step in building this application was setting up my backend API throug
 
 I thought critically about the database design I wanted to implement for this project, and I knew that I would have two main database tables: `events` and `comments`. As the project progressed, I also adopted `users` as well in order to determine who would be allowed to delete a certain event & comments. Events would have many comments, and the rest of the event "properties" would just be columns in the event table (i.e. the event's name, location, etc.). An event would *belong to* a user (the user who created the event), and a comment would also *belong to* a user. 
 
-For illustration, see a screenshot below of my table relations (or view the diagram on draw.io)
+For illustration, see a screenshot below of my table relations ([or view the diagram on draw.io](https://drive.google.com/file/d/18r4SRUjjy32S6BiajRFGONx-3_5NtAov/view?usp=sharing))
 
-SCREENSHOT HERE
+![Imgur](https://i.imgur.com/Btqf5lY.png)
 
 I followed RESTful conventions for my routes in the API and quickly was able to seed my database, ensure that the relationships were working correctly, and add validations for my models to prevent bad data from persisting to the database. In order to render JSON in an orderly and structured way (and to clean up the code in my controllers), I used the [FAST JSON API gem](https://github.com/Netflix/fast_jsonapi) from Netflix to quickly serialize my Ruby objects that I was rendering. See an example below from my `Comment` class: I wanted to include the content & time of update attributes as well as the attributes of the comment's event and its user. 
 
@@ -57,11 +57,11 @@ As much as I enjoyed manipulating the DOM and changing button colors or show/hid
 
 Note: I also added `catch` statements after the response was received to alert the user if there was a server error. 
 
-SCREENSHOT OF PSEUDOCODE HERE
+![Imgur](https://i.imgur.com/oNf6g3D.png)
 
 ## Adding a sprinkle of CSS: Bootstrap to the rescue
 I am sure it is no secret by now, but I do not have much patience with trying to design the layout of a web page. Thankfully, I checked out [Bootstrap](https://getbootstrap.com/) to help me painlessly transform my application into something that is neat and orderly, rather than plain HTML on a page. 
 
-SCREENSHOT OF APPLICATION GOES HERE
+![Imgur](https://i.imgur.com/1uMlS8f.png)
 
 ### Thanks for checking out this application - my goal is to continue to build things that make the world a better place. This happens little by little, day by day... until it becomes habit! Collaboration is encourage - check out the repo [here](https://github.com/jkellyphilly/allyship-corner) on Github and check out a short video of how to use the app [here](https://www.youtube.com/watch?v=Gcph4zjZFCQ&t=3s)!
