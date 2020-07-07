@@ -62,7 +62,7 @@ I personally went with using `sessionStorage` to store the token. There are defi
 
 Using my approach, the bottom line is that you can pull out the `jwt` key from the response and store that in `sessionStorage.accessToken`. Now, when we have any future request to the server, we must include an `Authorization` key in the header that looks like this:
 
-SCREENSHOT OF EXAMPLE REQUEST HERE
+![Imgur](https://i.imgur.com/ACB0vVE.png)
 
 #### Let's recap: we now have the ability to, upon successful user creation/authentication, send a token to our front-end. We have stored that token in our front-end, and we are sending it along with every request to our server. Now, let's set up a decoding strategy to authenticate requests in our back-end. 
 
@@ -72,11 +72,11 @@ The approach I took involved creating an `#authorized` method that was called *b
 
 See the screenshot below and work your way up. The status of the response to the client will be **unauthorized** unless someone is `logged_in`; for someone to be logged in, there must be a `decoded_token` present. If there is a `decoded_token`, then find the current user given the payload.
 
-SCREENSHOT OF CURRENT USER SECTION
+![Imgur](https://i.imgur.com/VvAryMK.png)
 
 Now, how do we go about getting the `decoded_token`? First, we need to parse the response and get the token out of it. Next, we use the JWT#decode method, passing in the token, our application secret, and an optional hashing algorithm to come up with our decoded token! 
 
-OTHER SCREENSHOT
+![Imgur](https://i.imgur.com/GUlWUpp.png)
 
 ### A note on error handling
 
