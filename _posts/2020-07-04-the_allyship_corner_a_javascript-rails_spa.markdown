@@ -42,7 +42,7 @@ headers: {
     }
 ```
 
-Please check out my blog post on implementing JWT (coming soon!) for a full walk-through of how to use this technique. 
+Please check out my [blog post on implementing JWT](https://jkellyphilly.github.io/integrating_json_web_tokens_in_to_a_javascript-rails_application) for a full walk-through of how to use this technique. 
 
 ## Building the front-end logic
 After the DOM content is loaded, front-end logic is essentially just waiting for user actions and then acting on them. Coding in Ruby and Rails has been a fantastic experience for me that I've really enjoyed, but I was pleasantly surprised at how much I enjoyed coding in JavaScript. 
