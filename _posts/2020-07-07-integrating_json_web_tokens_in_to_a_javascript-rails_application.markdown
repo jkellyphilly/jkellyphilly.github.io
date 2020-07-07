@@ -64,7 +64,7 @@ Using my approach, the bottom line is that you can pull out the `jwt` key from t
 
 ![Imgur](https://i.imgur.com/ACB0vVE.png)
 
-#### Let's recap: we now have the ability to, upon successful user creation/authentication, send a token to our front-end. We have stored that token in our front-end, and we are sending it along with every request to our server. Now, let's set up a decoding strategy to authenticate requests in our back-end. 
+**Let's recap: we now have the ability to, upon successful user creation/authentication, send a token to our front-end. We have stored that token in our front-end, and we are sending it along with every request to our server. Now, let's set up a decoding strategy to authenticate requests in our back-end. **
 
 ### Set up the back-end decoding
 
@@ -78,7 +78,7 @@ Now, how do we go about getting the `decoded_token`? First, we need to parse the
 
 ![Imgur](https://i.imgur.com/GUlWUpp.png)
 
-### A note on error handling
+## A note on error handling
 
 The `rescue JWT::DecodeError` portion of our code in the screenshot above is designed to save our application from crashing if the token isn't decoded properly or if the token is invalid. If we didn't have the rescue statement there, our server would crash as a result of this error. 
 
