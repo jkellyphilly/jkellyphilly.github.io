@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Integrating JSON Web Tokens in to a JavaScript-Rails application"
-date:       2020-07-07 19:06:42 +0000
+date:       2020-07-07 15:06:43 -0400
 permalink:  integrating_json_web_tokens_in_to_a_javascript-rails_application
 ---
 
@@ -42,12 +42,17 @@ The JWT#encode method takes two arguments: the "payload" (information to encode 
 
 Look below at how we will set up our #encode_token method. 
 
-SCREENSHOT HERE
+![Imgur](https://i.imgur.com/Eq0Bsgd.png)
 
 Next, let's implement that method in our `UsersController#create` (for signing up a new user) and `AuthController#create` (for logging in an existing user). 
 
-SCREENSHOT HERE OF USERSCONTROLLER
-SCREENSHOT HERE OF AUTHCONTROLLER
+`UsersController`: 
+
+![Imgur](https://i.imgur.com/ovwQAEa.png)
+
+`AuthController`: 
+
+![Imgur](https://i.imgur.com/mRq50xd.png)
 
 ### Store the JWT on the front-end for use during the session
 
