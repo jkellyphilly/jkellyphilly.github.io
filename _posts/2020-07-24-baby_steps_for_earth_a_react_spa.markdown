@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Baby Steps for Earth: a React SPA"
-date:       2020-07-24 16:04:18 +0000
+date:       2020-07-24 12:04:19 -0400
 permalink:  baby_steps_for_earth_a_react_spa
 ---
 
@@ -33,7 +33,7 @@ I also set up methods in my backend to standardize and normalize data flowing in
 
 For illustration on my database relations, see the screenshot below ([or view the diagram on draw.io](https://drive.google.com/file/d/1F3nvtS9XhUDzDd5r_tXQ44VmzSMx75tZ/view?usp=sharing))
 
-SCREENSHOT OF TABLE RELATIONS HERE
+![Imgur](https://i.imgur.com/WEcyHYD.png)
 
 ## Constructing front-end classes
 When setting up the front-end for this application, I realized that I had a lot of freedom in determining how to actually build all of the components that would interact with each other. For instance, theoretically, multiple components could live within the same file/within the same class, even. 
@@ -48,7 +48,7 @@ For my project, a similar pattern was followed. There are 3 "sections" of the si
 
 An example of a component that did *not* need to maintain state is the `Plan` component: its job was simply to render the plan that was passed down to it. Note that, unlike a class component, this component simply has an argument ("input") of the `props` passed down to it, and returns JSX which renders. 
 
-SCREENSHOT OF PLAN
+![Imgur](https://i.imgur.com/AZFSYAD.png)
 
 ## Connecting to the Redux store
 In order to avoid creating a full hierarchy and passing props down across multiple components, I used [Redux](https://redux.js.org/) in order to store & access data across various components in my application. Additionally, I used [Redux Thunk](https://github.com/reduxjs/redux-thunk) middleware so that I could perform asynchronous requests to my Redux store. This was particularly helpful when I needed to perform fetch requests to my API - with the Thunk middleware in place, the entire process could be completed asynchonously, resulting in a better user experience as a result of not waiting for the successful response from the database. 
@@ -59,12 +59,12 @@ This is how I imported/set up the connection to the store and thunk in `index.js
 
 Connecting a component to the store is useful in that the component's props are connected to the Redux store's data and functions. So, for example, for the `GoalsPage` component, I wanted access to the current `goals` from the Redux store as well as the `loadingGoals` variable. I also wanted access to be able to perform the `fetchGoals`, `createGoal`, and `addGoalToMyPlan` dispatch actions from various child components, so I also connected those functions to the props of `GoalsPage` as well. See the screenshot below for how I defined my `mapStateToProps` and `mapDispatchToProps` functions and implemented the connection to the Redux store.
 
-SCREENSHOT OF MAPS HERE
+![Imgur](https://i.imgur.com/qArma8n.png)
 
 ## React Bootstrap to the rescue
 
 Once again, I went with a quick and easy route to transform my application from plain HTML to something that looks rather presentable, so I used [React Bootstrap](https://react-bootstrap.github.io/) to transform my application to something that looks user-friendly (including making my "new goal" form into a modal!).
 
-SCREENSHOT OF APPLICATION HERE (MODAL OPEN)
+![Imgur](https://i.imgur.com/BtvCO51.png)
 
 ### Thanks for checking out this application - my goal is to continue to build things that make the world a better place. This happens little by little, day by day... until it becomes habit! Collaboration is encourage - check out the frontend & backend repos [here](https://github.com/jkellyphilly/baby-steps-for-earth) and [here](https://github.com/jkellyphilly/baby-steps-for-earth-backend) on Github and check out a short video of how to use the app [here](https://www.youtube.com/watch?v=Yd6Rc8FYgyg)!
